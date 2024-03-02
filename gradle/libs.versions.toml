@@ -1,0 +1,6 @@
+[versions]
+groovy = "4.0.19"
+
+[libraries]
+groovy = { module = "org.apache.groovy:groovy", version.ref = "groovy" }
+groovy-datetime = { module = "org.apache.groovy:groovy-dateutil", version.ref = "groovy" }
