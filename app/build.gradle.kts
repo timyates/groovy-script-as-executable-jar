@@ -1,3 +1,5 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
 plugins {
     // We're using Groovy
     groovy
@@ -30,4 +32,8 @@ testing {
             useSpock("2.3-groovy-4.0")
         }
     }
+}
+
+tasks.withType<ShadowJar> {
+    mergeGroovyExtensionModules()
 }
